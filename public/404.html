@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" is-fullscreen>
+<meta charset="utf-8">
+<title>Not found · Example · Site Editor</title>
+<meta name="viewport" content="initial-scale=1, width=device-width">
+
+<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+<script src="https://unpkg.com/focus-visible-polyfill"></script>
+<link rel="stylesheet" href="
+  https://ui.components.workers.dev/
+    ?components=
+      Button,
+      Stack
+    &helpers=
+      is-fullscreen
+    &--font-family=Avenir, sans-serif
+    &--color-rgb=29, 30, 60
+    &--background-color-rgb=239, 239, 239
+    &--accent-color-rgb=74, 76, 105
+">
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    --font-size: 18px;
+  }
+
+  .Page {
+    padding: 4em 1em;
+    margin: 0 auto;
+    width: 40em;
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .Page {
+      padding: 1em 1em;
+    }
+  }
+</style>
+
+<div class="Page">
+  <div class="Stack">
+    <h1>Not found</h1>
+
+    <div>
+      <p>Unfortunately, the page you requested cannot be found.</p>
+    </div>
+  </div>
+</div>

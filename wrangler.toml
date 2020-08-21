@@ -1,0 +1,8 @@
+name = "example"
+type = "webpack"
+account_id = "7f899bda35ad499383f34c558b53d64f" # site-editor.workers.dev
+workers_dev = true
+kv-namespaces = [{ binding = "EDITABLES", id = "e44d4ddfbeaa451d81eddf4f14a2a008", preview_id = "b521fa69f6e148639628c4a913f315aa" }]
+
+[site]
+bucket = "./public"

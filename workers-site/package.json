@@ -2,6 +2,7 @@
   "private": true,
   "main": "index.js",
   "dependencies": {
-    "@cloudflare/kv-asset-handler": "~0.0.11"
+    "@cloudflare/kv-asset-handler": "~0.0.11",
+    "site-editor": "git+https://github.com/adamschwartz/site-editor.git"
   }
 }

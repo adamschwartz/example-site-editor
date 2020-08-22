@@ -1,5 +1,5 @@
 import { getAssetFromKV, mapRequestToAsset } from "@cloudflare/kv-asset-handler"
-import siteEditor from "./site-editor.js"
+import siteEditor from "site-editor"
 
 const DEBUG = false
 

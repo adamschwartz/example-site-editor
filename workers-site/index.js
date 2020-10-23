@@ -35,7 +35,9 @@ async function handleEvent(event) {
     response.headers.set("X-Frame-Options", "DENY")
     response.headers.set("Referrer-Policy", "unsafe-url")
 
-    return siteEditor(false, response, { allowEditing: true })
+    // Temporarilly disable editing for security
+    // return siteEditor(false, response, { allowEditing: true })
+    return siteEditor(false, response, { allowEditing: false })
 
   } catch (error) {
     if (DEBUG) {

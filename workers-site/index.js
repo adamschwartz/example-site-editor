@@ -20,7 +20,6 @@ addEventListener("fetch", event => {
 
 async function handleEvent(event) {
   const url = new URL(event.request.url)
-  const options = {}
 
   try {
     const siteEditorResponse = await siteEditor(event)
@@ -36,7 +35,7 @@ async function handleEvent(event) {
     response.headers.set("X-Frame-Options", "DENY")
     response.headers.set("Referrer-Policy", "unsafe-url")
 
-    return siteEditor(false, response)
+    return siteEditor(false, response, { allowEditing: true })
 
   } catch (error) {
     if (DEBUG) {
